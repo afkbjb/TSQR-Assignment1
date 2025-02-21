@@ -5,15 +5,15 @@ This repository contains the solutions for TSQR Assignment 1, implementing **Tal
 ## Directory Structure
 ```
 TSQR-Assignment1/
-│── Interpreted_Language/   # Python code for Q1 & Q3 visualization
+│── Interpreted_Language/   
 │   ├── Q1.ipynb            # Q1: TSQR implementation in Python
 │   ├── Q3_plot.ipynb       # Q3: Performance scaling visualization
-│   ├── scaling_results.txt  # Execution results from Q3 (used for visualization)
+│   ├── scaling_results.txt  # Execution results from Q3
 │── C_Code/                 # C code for Q2 & Q3
 │   ├── Q2.c                # TSQR implementation in C with MPI
-│   ├── Q3.c                # Performance measurement
+│   ├── Q3.c                # TSQR execution time 
 │   ├── Makefile            # Compilation script
-│── README.md               # Documentation
+│── README.md              
 ```
 
 ## Running C Code (MPI)
@@ -27,10 +27,12 @@ mpirun -np 4 ./Q3     # Run performance test
 ## Running Python Code
 ```sh
 jupyter notebook Interpreted_Language/Q1.ipynb   # Q1 TSQR
-jupyter notebook Interpreted_Language/Q3_plot.ipynb  # Q3 scaling visualization
+jupyter notebook Interpreted_Language/Q3_plot.ipynb  # Q3 scaling plots
 ```
 
 ## Scaling Results
 - `scaling_results.txt` contains execution times for different matrix sizes.
-- `Q3_plot.ipynb` reads `scaling_results.txt` to generate performance plots.
-- The C implementation of TSQR was tested on matrices with varying **m (rows)** and **n (columns)** to analyze computational efficiency.
+
+- `Q3_plot.ipynb` reads `scaling_results.txt` to generate plots.
+
+  
