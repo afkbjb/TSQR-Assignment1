@@ -1,4 +1,4 @@
-# TSQR Assignment 1
+## TSQR Assignment 1
 
 This repository contains the solutions for TSQR Assignment 1, implementing **Tall-Skinny QR (TSQR) decomposition** using **MPI** for parallel computing.
 
